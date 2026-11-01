@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>WoW Forever Wayward Guild Crafting Plan</title>
+<style>
+:root{--zoom:1;--bg:#121417;--bg2:#1a1d22;--bg3:#22262d;--line:#2d323b;--fg:#e6e3dc;--muted:#9aa0ab;--accent:#d9a441;--accent2:#5aa0d8}
+*{box-sizing:border-box}
+html{font-size:calc(clamp(15px, 0.5vw + 8.5px, 24px) * var(--zoom))}
+body{margin:0;background:var(--bg);color:var(--fg);font:1rem/1.45 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent2);text-decoration:none}a:hover{text-decoration:underline}
+header{position:sticky;top:0;z-index:20;background:var(--bg2);border-bottom:1px solid var(--line);padding:.5em 1.25em;display:flex;align-items:center;gap:1.5em;flex-wrap:wrap}
+header h1{font-size:1.15em;margin:0;white-space:nowrap}
+.zoom{margin-left:auto;display:flex;gap:.25em;align-items:center;color:var(--muted);font-size:.85em}
+.zoom button{background:var(--bg3);color:var(--fg);border:1px solid var(--line);border-radius:.35em;padding:.2em .6em;cursor:pointer;font-size:1em}
+main{padding:.9em 1.25em 3em}
+table{border-collapse:collapse;width:100%;font-size:.95em}
+th,td{padding:.35em .55em;border-bottom:1px solid var(--line);vertical-align:middle;text-align:left}
+th{background:var(--bg2);font-size:.75em;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);white-space:nowrap}
+tr:hover td{background:#1c2026}
+td.num,th.num{text-align:right;white-space:nowrap}
+.tw{overflow-x:auto;max-width:100%}
+@media (max-width:900px){header{position:static}header h1{white-space:normal}}
+@media print{:root{--bg:#fff;--bg2:#f2f2f2;--bg3:#e8e8e8;--line:#c8c8c8;--fg:#111;--muted:#555;--accent:#7a5200;--accent2:#1a4f8a}header{position:static}.zoom,.doc .hl{display:none}tr:hover td{background:none}.doc h4,.doc blockquote{color:var(--fg)}.doc h2,.doc h3,.doc h4{break-after:avoid}.doc tr{break-inside:avoid}}
+.doc{max-width:88em;font-size:1.02em;line-height:1.55}
+.doc h1{font-size:1.6em;margin:.5em 0 .6em;border-bottom:1px solid var(--line);padding-bottom:.3em}
+.doc h2{font-size:1.3em;margin:1.6em 0 .5em;color:var(--accent)}
+.doc h3{font-size:1.1em;margin:1.2em 0 .4em}
+.doc h4{font-size:1em;margin:1em 0 .3em;color:#d7d2c6}
+.doc table{font-size:.92em;margin:.5em 0 1em}
+.doc table th{position:static;background:var(--bg3)}
+.doc blockquote{border-left:.25em solid var(--accent);margin:.5em 0;padding:.3em .8em;color:#d7d2c6;background:var(--bg2)}
+.doc code{background:var(--bg3);padding:0 .3em;border-radius:.2em;font-size:.9em}
+.doc hr{border:0;border-top:1px solid var(--line);margin:1.2em 0}
+.doc ul,.doc ol{padding-left:1.5em}
+.doc li{margin:.15em 0}
+.doc h1,.doc h2,.doc h3,.doc h4{scroll-margin-top:calc(var(--hh,3.4em) + .6em)}
+.doc .hl{margin-left:.35em;color:var(--muted);font-weight:400;opacity:0}
+.doc h1:hover .hl,.doc h2:hover .hl,.doc h3:hover .hl,.doc h4:hover .hl,.doc .hl:focus{opacity:1}
+.doc .toc{display:flex;flex-direction:column;align-items:flex-start;gap:.2em;width:max-content;max-width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:.5em;padding:.6em 1.2em .75em;margin:1em 0}
+.doc .toc b{align-self:center;color:var(--muted);font-size:.75em;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.3em}
+.doc .tw{margin:.5em 0 1em}
+.doc .tw table{margin:0}
+</style>
+</head>
+<body>
+<header>
+ <h1>WoW Forever Wayward Guild Crafting Plan</h1>
+ <div class="zoom"><span>Text</span><button id="zm">A−</button><button id="zr">A</button><button id="zp">A+</button></div>
+</header>
+<main>
+ <div class="doc" id="plan-out"></div>
+</main>
+
+
+<script id="PLAN_MD" type="text/markdown"># Guild Crafting Plan: Gated Recipes from Launch to Raid Opening
+
+**Covers** launch on 4 November (day 1) through the first raid weeks · **Raids Open** 9 December (day 36): Barrow Deeps (10 players), Hyjal Summit (20) and Onyxia's Lair (40) · **Guild** Horde, PvE server
+
+Everything in this document is a recommendation for the guild's leadership. The companion reference page holds the data behind it: every gated recipe with its cost, standing, vendor and reagents; every Craftsman's Writ with its recipe source and, where the beta showed it, its customer; every Waylaid Crate; every camp blueprint. Where a value comes from Classic rather than from Forever data it is labelled Classic, both here and in the reference page.
+
+The reference page is also published for the whole guild at [rosswillden.github.io/wayward-crafting](https://rosswillden.github.io/wayward-crafting/), without this plan.
+
+**Expect it to change.** This plan is written before launch based on beta data, datamined information, and Classic information. The beta demonstrated that Blizzard has already moved some vendor items to other sources, so treat every cost, standing and source as provisional until someone confirms it in game. What the guild learns each week (G5) will change the numbers, the purchase order and possibly the approach; decisions that need that information wait until it exists (I2, I3).
+
+---
+
+## A. Summary
+
+### A1. The Opportunity
+
+Forever adds a new faction, Durotar Supply and Logistics. Its camp, just outside the Crossroads, has a vendor for each of the primary crafting professions and Cooking, all selling new recipes. The vendors take Merchant's Favor, a currency earned by filling Waylaid Crates, and the better recipes also need reputation with the faction, up to Honored.
+
+Almost all of these recipes bind to the character who buys them. For Blacksmithing, Leatherworking and Tailoring, almost everything the recipes make binds as well, so they help only the crafter who holds them. Alchemy and Enchanting are the exceptions: elixirs trade, and an enchanter can put an enchant on any member's gear. Their best recipes are worth a great deal to a raiding guild. The elixirs cover every raid role, and the bracer, staff, off-hand and glove enchants are among the strongest of their kind (section C).
+
+Buying them takes two grinds, both on the crafter's own character: Merchant's Favor to pay for the recipes, and reputation to reach the standing they need. Neither can be traded or pooled once earned. What the guild can pool is everything that goes into them: crates, writs, materials and dungeon time.
+
+The plan proposes that the guild funds both grinds together for an alchemist and an enchanter, the **Merchant's Favor crafters**, who then craft for the guild's members and are first to market to sell to the masses. That can be one character with both professions or two characters with one each, and each way has its benefits (section B).
+
+Crates and writs drop from day one, so the guild can ask members to send in every one they find (A3).
+
+### A2. How the Grind Works
+
+These terms run through the rest of the plan, in the order the grind uses them.
+
+- **Waylaid Crates** drop from ordinary mobs and trade freely. They come in four tiers, Apprentice, Journeyman, Expert and Artisan, which follow the mob's level, and in two rarities. White crates take gathered materials such as herbs, ore, cloth, leather or Enchanting dust; green crates take crafted goods such as bars, bolts, cured hides or Engineering parts. A character must be level 10 to open an Apprentice or Journeyman crate, 20 for Expert and 35 for Artisan.
+- **Merchant's Favor.** Each crate takes any one of several *bundles* of materials. Whoever fills it and hands it in at the camp outside the Crossroads earns its Merchant's Favor: 5, 10 or 15 for a white Apprentice, Journeyman or Expert crate, and double that for a green one. What Artisan crates pay is not recorded. Merchant's Favor cannot be traded and has no cap.
+- **Reputation** with Durotar Supply and Logistics: Friendly takes 3,000 and Honored 9,000 in all, and Honored is the highest standing any Durotar recipe needs. The first crate a character turns in (or the first writ they start) brings a one-off *Shipping Label*: 2,000 reputation and 50 Merchant's Favor. After that, crates pay no reputation; it comes from writs and Forged Delivery Receipts.
+- **Craftsman's Writs** come in three tiers, Journeyman, Expert and Artisan. Each asks for a crafted item delivered to a named customer and pays 75, 125 or 200 reputation, and each distinct writ pays once a day per character. Writs come sealed in *writ envelopes*, each of which opens into a random writ of its tier. Envelopes, opened writs and the items writs ask for all trade.
+- **Forged Delivery Receipts.** From Friendly, 15 Merchant's Favor buys a Forged Delivery Receipt, which turns any unfilled crate into a container worth 50 reputation, handed in at the same camp with no delivery.
+- **Forger's Quill.** From Honored, 15 Merchant's Favor buys a Forger's Quill, which rerolls a writ into a random writ of the same tier. The quill binds and is sold only from Honored, where a crafter's own climb ends, so it is only useful for the second crafter's grind: once the first crafter is Honored, they reroll writs the guild cannot use and pass on the new ones, which trade.
+
+### A3. Decisions and the Size of the Grind
+
+**Before launch, one ask:** members send every Waylaid Crate, writ envelope and opened writ they find to the guild bank (G1).
+
+**Within the first two weeks, three decisions** (I1): one Merchant's Favor crafter or two, and who (section B); what else members are asked to contribute (G1); and who manages the guild funds and watches the auction house for deals.
+
+The first decision sets the size of the grind. The Merchant's Favor is the same either way: 4,020 for the purchase lists in C1, which is 134 to 804 crates depending on the tier. With two crafters it splits into 2,160 for the enchanter (72 to 432 crates) and 1,860 for the alchemist (62 to 372). What differs is the reputation, and so the Merchant's Favor spent on Forged Delivery Receipts:
+
+| | One crafter with both professions | Two crafters, one profession each |
+|---|---|---|
+| Reputation to Honored, past each Shipping Label | 7,000 | 14,000 |
+| That reputation as writs alone, Artisan to Journeyman | 35 to 94 writs | 70 to 188 writs |
+| Or writs to Friendly, then Forged Delivery Receipts | 5 to 14 writs, then 120 receipts | 10 to 28 writs, then 240 receipts |
+| The cost to use Crates for Reputation past Friendly | 120 unfilled crates and 1,800 Merchant's Favor | 240 unfilled crates and 3,600 Merchant's Favor |
+| Merchant's Favor needed on that route: the C1 lists plus the receipts | 5,820 | 7,620 |
+| Crates filled to earn it: all Expert green (30 each) to all Apprentice white (5 each) | 194 to 1,164 | 254 to 1,524 |
+| Crates in all on that route: those filled, plus one unfilled crate per receipt | 314 to 1,284 | 494 to 1,764 |
+
+Each crafter's Shipping Label also pays 50 Merchant's Favor once. Nobody knows yet which crate and writ tiers the guild will get in numbers, so each count runs from the best tier to the worst (G2, G3).
+
+**Reputation is the slow part.** Merchant's Favor has no cap and every crate turns in at the camp outside the Crossroads, so with crates and materials in hand it can be earned in a day. Reputation takes longer: each distinct writ pays once a day, and receipts need Friendly first. G3 covers the two ways to earn it.
+
+### A4. What the Plan Builds
+
+In order of value:
+
+1. **The Merchant's Favor line**: the Alchemy and Enchanting recipes in A1, bought in the order proposed in section C, which also lists the best enchants sold elsewhere.
+2. **A faction line**: four Classic factions (Timbermaw Hold, Argent Dawn, Thorium Brotherhood and the Cenarion Circle) sell enchants and gear patterns for gold, but only to a character with the right standing, and most of those recipes bind too (section D).
+3. **A station line**: Forever also adds player camps, where anyone can place crafted stations around a campfire, and some recipes can only be made at the right station. Flasks and other skill-300 crafts need skill-300 stations, whose blueprints and placement reagents have to be found, most likely in level-60 dungeons (section E).
+4. **Crafting at cost**: all of this builds crafters who can make elixirs, potions and enchants for members at cost, most of all once raids open on 9 December.
+
+**Nexus Crystals have historically been hard to come by, and so costly.** Six of the nine Merchant's Favor enchants need two to four per application. The guild will need to work out the best way to acquire them across crafting, dungeons, and world hunts (C3, section F). Malleable Essence of Nature is the material that waits for raids: it is believed to come only from disenchanting raid items, so the raid-set patterns (D2) cannot start before raids open.
+
+### A5. The Biggest Risks
+
+1. **Everything rides on the Merchant's Favor crafters.** Their recipes, standing and Merchant's Favor bind to their characters, so the guild's investment sits with one or two people. Backup crafters, built up over time once the first are set up, spread it (I2).
+2. **The Runed Arcanite Rod**, the tool an enchanter needs for the top enchants. Eight of the nine Merchant's Favor enchants and every faction enchant in D1 need it. It binds, so every enchanter who applies them needs their own. The first rod needs a Black Vitriol, three Arcane Crystals, a Golden Pearl and about four days of transmutes; each later rod needs the crystals, a pearl and the transmutes again, and the Arcanite, Legionite and essence transmutes share one cooldown (B3).
+3. **Levelling pace.** Skill 300, the faction grinds and the level-60 hunts all move with how fast members reach 60 and how many crates and writs turn up.
+4. **The skill-300 blueprints.** Nobody knows where they drop. Flasks and other skill-300 crafts wait on them (section E).
+5. **Beta data.** Some vendor items have already moved since the beta, so every source and price is provisional until someone checks it in game (G5).
+6. **Cost.** The whole endeavour may prove very costly.
+
+---
+
+## B. The Merchant's Favor Crafting Line: One Character or Two
+
+**The Merchant's Favor crafter** (A1) means whoever runs the Merchant's Favor line: one character holding both Alchemy and Enchanting, or, with two characters, the alchemist and the enchanter, each running their own list.
+
+### B1. The Mechanics That Decide It
+
+- **What stays on one character:** the Merchant's Favor, earned by whoever fills a crate; the reputation, earned by whoever hands in a writ or a receipt's container; and the recipes, since 303 of the 311 Durotar recipes bind when bought (the eight that trade are all Engineering schematics). Nothing earned can be pooled or passed on.
+- **What trades:** unfilled crates, bundle materials, writs, envelopes and the items writs ask for, so anyone in the guild can supply a crafter.
+- **How far the climb goes:** almost every Alchemy and Enchanting recipe worth buying needs Honored on the buyer, and Honored is the ceiling; no Durotar recipe needs Revered or Exalted. Each distinct writ pays once a day per character.
+
+### B2. The Two Options Side by Side
+
+| | One character: Alchemy and Enchanting | Two characters: an alchemist and an enchanter |
+|---|---|---|
+| Reputation grind | One grind to Honored (A3) | Two grinds to Honored (A3), the option's main one-time cost. If the two climbs run one after the other, the first crafter, once Honored, can reroll writs for the second (G3) |
+| Writ deliveries | One set of delivery circuits | Two sets, or the same circuits run twice |
+| Merchant's Favor | The same 4,020 for the C1 lists, in one pool | The same 4,020 for the C1 lists, split between the two: 2,160 for the enchanter and 1,860 for the alchemist |
+| Levelling Alchemy | About 690 herbs just to level Alchemy, every one bought or donated, since a character with both crafts has no Herbalism | The alchemist, with Herbalism as the second profession, gathers them while levelling |
+| Extra Merchant's Favor recipes | Both profession slots are taken, so no Tailoring reagent-bag patterns | With Tailoring, the enchanter's Merchant's Favor also buys the Mageweave and Runecloth Reagent Bags (60 Merchant's Favor each at Friendly) |
+| Where the investment sits | All of it on one character: both sets of recipes, the standing and the Merchant's Favor | Split across two characters: each line's recipes, standing and Merchant's Favor sit with its own crafter |
+| Hours asked of the Merchant's Favor crafter | High: filling, delivering, crafting, disenchanting and placing stations | Split between two people: potions from one, enchants from the other |
+
+Either way, a Cooking secondary skill on a Merchant's Favor crafter adds the Wicked Smoothie for casters (+20 Spirit, 90 Merchant's Favor at Honored).
+
+**Which to choose.** Neither option is cheaper on every front. One character saves the second reputation grind, the biggest one-time saving in either option; two characters save the ongoing cost of bringing every herb to a crafter who cannot gather, and spread the work and the risk.
+
+With one character, every potion and enchant request in the guild goes to the same person, and that may be too much to ask of one member. Crafting for the guild can stop being part of the game they play and become all of it, and the load has a real potential to become overwhelming. Burnout would cost the guild its whole investment, since the recipes, standing and Merchant's Favor all sit on that one character.
+
+Either way, the Merchant's Favor crafters should not be grinding other factions or running the bank. Their hours go to filling, delivering, buying and crafting.
+
+### B3. What the Merchant's Favor Line Needs in Either Option
+
+Whether these sit on one character or two:
+
+- **Alchemy:** skill 300; the Philosopher's Stone for the Arcanite transmutes (below); and the Fermenter blueprint (Alchemy 140, from Rath'mael in Ruins of Lordaeron), a player-camp station (A4) that two of the writ items need.
+- **Enchanting:** skill 300; the Runed Truesilver Rod (trainer, Enchanting 200); the Runed Arcanite Rod (below); and the Arcane Salvager blueprint (Enchanting 140, also from Rath'mael), which improves disenchanting.
+
+**The Runed Arcanite Rod** is the tool an enchanter must carry to apply the top enchants. Eight of the nine Merchant's Favor enchants and every faction enchant in D1 need it, and it binds, so every enchanter who applies them needs a rod of their own.
+
+| Step | Made by | Takes | The hard part |
+|---|---|---|---|
+| Philosopher's Stone | The alchemist at Alchemy 225; the recipe is sold by Alchemist Pestlezugg in Tanaris | A Black Vitriol, 4 Iron Bars, 4 Purple Lotus and 4 Firebloom | Black Vitriol is a rare Mining find in Mithril and Dark Iron deposits and Thorium veins; the only rate in the data is about 1 in 900 loots, on Ooze Covered Mithril. The stone binds, so only its maker can use it |
+| 3 Arcanite Bars | The alchemist, from Alchemy 275; Recipe: Transmute Arcanite is also sold by Alchemist Pestlezugg, and it trades | One transmute each, with the stone: 1 Thorium Bar and 1 Arcane Crystal | Arcane Crystal is a rare find in Thorium veins, and each transmute has a 1.958-day cooldown, so one alchemist needs about four days for three |
+| Arcanite Rod | A blacksmith at Blacksmithing 250, from the trainer | 3 Arcanite Bars and a Dense Grinding Stone | – |
+| Runed Arcanite Rod | The enchanter at Enchanting 290; the formula is sold by Lorelae Wintersong in Moonglade | The Arcanite Rod, a Golden Pearl, 10 Illusion Dust, 4 Greater Eternal Essence, 4 Small Brilliant Shards and 2 Large Brilliant Shards | The Golden Pearl is a rare clam find |
+
+Start the transmutes as soon as the alchemist reaches 275, share them with alchemists who already own a Philosopher's Stone (each new stone needs its own Black Vitriol), or buy the bars (H2). Buying the bars saves the transmutes and the Arcane Crystals and, if the alchemist has no stone yet, the hunt for its Black Vitriol. The stone is still worth having: it is also the tool for the essence transmutes, such as Water to Air from Magnus Frostwake and Fire to Earth from Plugger Spazzring, which make essences several of the enchants take. Apart from Iron to Gold and Mithril to Truesilver, which have their own one-hour cooldowns, all Alchemy transmutes share one cooldown: Arcanite and Legionite take about two days each and the essence transmutes about one, so every Legionite Bar or essence an alchemist makes puts the rods back by that much. Each extra alchemist with a stone adds transmutes.
+
+---
+
+## C. The Merchant's Favor Menu and the Proposed Purchase Order
+
+### C1. Proposed Purchase Order
+
+The Durotar Alchemy and Enchanting vendors sell 68 recipes for Merchant's Favor in three standing tiers (45 Merchant's Favor at no standing, 120 at Friendly, 180 or 240 at Honored), and every one binds when bought; the reference page lists them all. Each list below belongs to the crafter who will use it, and that crafter's Merchant's Favor target is the list's total plus any Forged Delivery Receipts (G3); G2 turns the lists into crate counts. In the one-character option both lists share one pool. Leadership can cut either list at any line.
+
+Who each recipe is for comes from Sharpie's Gear Judge, an addon that scores each enchant's and elixir's stats with every spec's level-60 raid stat weights. **Premier** is a spec's top score whatever the materials; **budget** is its top score without Righteous Orbs or Nexus Crystals; **fallback** is for when nothing better can be had.
+
+**Enchanting**, 2,160 Merchant's Favor. Nine enchants, each 240 Merchant's Favor at Honored and Enchanting 300, ordered by how many raiders gain and by how much. The two staff enchants, the biggest single upgrades, follow Greater Spellpower, and the enchants that need no Nexus Crystals come before the gloves, which take two to four each (C3). A warrior-heavy roster could move Superior Strength up.
+
+| # | Enchant | For | Materials per application | Running total |
+|---:|---|---|---|---:|
+| 1 | Bracer - Greater Spellpower | +16 spell power: the best bracer for every damage caster and Ret paladin; healers score Healing Power +24 (D1) higher | 3 Greater Eternal Essence, 9 Illusion Dust, 12 Essence of Undeath, 2 Purple Lotus | 240 |
+| 2 | 2H Weapon - Spellblasting | Premier: +65 spell power for caster staves and Ret two-handers. The enchanter collects each Blood of Heroes in person (C2) | 3 Nexus Crystal, 24 Illusion Dust, 1 Blood of Heroes, 6 Purple Lotus | 480 |
+| 3 | 2H Weapon - Mighty Healing Power | Premier: +100 healing and +34 spell damage for healer staves | 4 Nexus Crystal, 6 Greater Eternal Essence, and 4 each of Fel Crystal, Torbernite, Stranglevine and Azerothium Bar (2 Pitchblende each) | 720 |
+| 4 | Off-Hand - Wisdom | +6 Intellect and +5 Spirit: premier for Resto shamans (Disc priests score it level with Excellent Spirit); budget for other healers' and Fire mages' held off-hands. Other damage casters gain almost nothing from an off-hand enchant | 6 Large Brilliant Shard, 18 Illusion Dust, 1 Essence of Air, 1 Essence of Water | 960 |
+| 5 | Bracer - Superior Deflection | +6 Defense: the best bracer for Prot warriors, Prot paladins and bears | 3 Large Brilliant Shard | 1,200 |
+| 6 | Gloves - Superior Strength | +15 Strength: Arms and Fury warriors and Enhancement shamans | 4 Nexus Crystal, 8 Greater Eternal Essence, 4 Essence of Earth | 1,440 |
+| 7 | Gloves - Natural Power | +20 Nature damage: Elemental shamans | 2 Nexus Crystal, 5 Large Brilliant Shard, 4 Death Lotus | 1,680 |
+| 8 | Gloves - Arcane Power | +20 Arcane damage: Arcane mages and Balance druids | 2 Nexus Crystal, 5 Large Brilliant Shard, 2 Skin of Shadow | 1,920 |
+| 9 | Gloves - Holy Power | +20 Holy damage: Ret paladins | 2 Nexus Crystal, 5 Large Brilliant Shard, 5 Stratholme Holy Water, 2 Frayed Abomination Stitching | 2,160 |
+
+Not worth buying until those nine are done, another 1,215 Merchant's Favor together: Bracer - Superior Intellect (the best bracer for Beast Mastery and Marksmanship hunters, but Greater Spellpower covers the casters), Cloak - Agility, 2H Mighty Spell Power (a fallback only if Blood of Heroes for Spellblasting cannot be had), Weapon - Revelation, Insight and Recovery (cheap tests at 45 Merchant's Favor each; Sharpie grades Revelation only a fallback because it cannot score its proc), Chest - Absorption, and Necklace - Spell Power and Deflection. Not proposed at all: the relics, staves, off-hand items and wand on the menu, which bind on pickup or need the Arcane Forge.
+
+**Alchemy**, 1,860 Merchant's Favor. The three Friendly recipes come first because they can be bought as soon as the alchemist is Friendly. The Honored ones follow by how many of Sharpie's 27 level-60 raid specs each one scores top for, ties going to the lower skill. Elixirs stack, so this ranks each spec's first elixir, and a later line adds to an earlier one rather than replacing it. Sharpie scores specs, not head counts, so a melee-heavy roster could put Grizzly ahead of the Owl. Wicked Regeneration is no spec's first or second elixir, which makes it the first line to cut.
+
+| # | Recipe | Standing | Skill | Merchant's Favor | Running total | For |
+|---:|---|---|---:|---:|---:|---|
+| 1 | Elixir of Greater Fortitude | Friendly | 200 | 120 | 120 | +400 health for everyone |
+| 2 | Greater Mageblood Elixir | Friendly | 175 | 120 | 240 | 20 mana per 5 sec for every caster, healer and hunter |
+| 3 | Greater Cleric's Elixir | Friendly | 195 | 120 | 360 | +40 healing for every healer, and the top elixir for Holy priests |
+| 4 | Elixir of the Owl | Honored | 280 | 180 | 540 | +25 Intellect and 2% crit. Tops 10 specs: every damage caster but Fire mages and Elemental shamans, plus Holy paladins, Resto shamans and Disc priests |
+| 5 | Elixir of the Grizzly | Honored | 300 | 240 | 780 | +25 Strength and 2% crit. Tops 7 specs, every melee DPS one: Arms and Fury warriors, Ret paladins, Enhancement shamans (narrowly), Cat druids and both rogue specs; rogues and Cat druids score the Mongoose, a drop recipe, higher |
+| 6 | Elixir of the Phalanx | Honored | 250 | 180 | 960 | The tank elixir. Tops 3 specs: Prot warriors, Prot paladins and bears |
+| 7 | Elixir of Cunning | Honored | 275 | 180 | 1,140 | +25 Agility and Intellect. Tops 3 specs: all three hunter specs |
+| 8 | Elixir of the Whale | Honored | 275 | 180 | 1,320 | +25 Spirit and 2% crit, the same as Elixir of Sages but cheaper to make. Tops 2 specs: Resto druids, and narrowly Fire mages. The second elixir, after the Owl, for most other casters and healers |
+| 9 | Elixir of Nature Power | Honored | 285 | 180 | 1,500 | +40 Nature spell damage. Tops 1 spec: Elemental shamans (Balance druids score the Owl higher) |
+| 10 | Elixir of Ferocity | Honored | 275 | 180 | 1,680 | +18 Strength and Agility. Tops no spec, but stacks with Grizzly as the second elixir for Arms and Fury warriors, Cat druids and both rogue specs |
+| 11 | Elixir of Wicked Regeneration | Honored | 285 | 180 | 1,860 | 9 health and 10 mana per 5 sec for healers. Tops no spec on its own; worth it only if it stacks with Greater Mageblood (G5) |
+
+**Whale or Sages.** The Whale and Elixir of Sages have the same effect, so it is likely that only one of them is really in the game, or that one of the effects will change; check both at the vendor before buying either (G5). The Whale is proposed because it is cheaper to make (3 Dreamfoil, 1 Gromsblood and a Crystal Vial a craft, against 4 Dreamfoil, 2 Golden Sansam and an Imbued Vial); Sages joins only if the two turn out to stack.
+
+Not proposed: Potion of Elemental Purging, unless the new raids turn out to have elemental bosses; the three 30-second potions, which share the potion cooldown with healing and mana potions; and the combat potions (Caustic Smog, Venomous Blood, Dragonfire, Disorienting Smog). Two drop recipes are worth watching for: Greater Arcane Elixir, and Elixir of the Mongoose (Alchemy 280, +25 Agility and 2% crit), which Sharpie scores above Grizzly for both rogue specs and Cat druids. Whoever sees either should report it (G5).
+
+### C2. Top Enchants Not on the Merchant's Favor Menu
+
+These are the enchants Sharpie grades premier, budget or fallback for some spec that are not sold for Merchant's Favor, grouped by how sure their source is. A drop source is the top dropper in the data and may not be the only one.
+
+#### Presumed Known Source
+
+| Enchant | Grade, and for whom | Source | Materials to watch |
+|---|---|---|---|
+| 2H Agility +25 | Premier: bears, and Marksmanship and Survival hunters' two-handers. Budget: Cat druids | Timbermaw Hold, Friendly (D1) | None |
+| Agility +15 | Premier: Prot warriors' one-handers. Budget: rogues' off-hands and Assassination main hands | Timbermaw Hold, Honored (D1) | None |
+| Shield - Law of Nature | Premier: every shield user except Prot warriors (Holy and Prot paladins and all three shaman specs) | Timbermaw Hold, Revered (D1) | 1 Righteous Orb |
+| Mighty Intellect | Premier: hunters' one-handers and Beast Mastery two-handers. Budget: Disc priests' weapons and Enhancement one-handers | Thorium Brotherhood, Revered (D1); may change with the Molten Core rework | None |
+| Bracer - Healing Power +24 | Premier: every healer | Argent Dawn, Revered (D1) | None |
+| Bracer - Superior Strength | Premier: Arms and Fury warriors and Enhancement shamans | Drops from Deadwind Warlocks in Deadwind Pass | None |
+| Mighty Spirit | Budget: Resto druids' weapons | Thorium Brotherhood, Honored (D1) | None |
+| Strength +15 | Budget: Fury warriors dual-wielding | Thorium Brotherhood, Friendly (D1) | None |
+| 2H Superior Impact | Budget: Arms warriors | Drops from Blackhand Elite in Blackrock Spire | None |
+| Fiery Weapon | Budget: Combat rogues' main hands | Drops from Pyromancer Loregrain in Blackrock Depths | None |
+| Shield - Superior Spirit | Budget: Resto shamans | Drops from Scarlet Warders in Eastern Plaguelands | None |
+| Cloak - Superior Defense | Budget: Prot paladins and bears | Lorelae Wintersong, Moonglade | None |
+| Shield - Greater Stamina | Fallback: Prot warriors, moving up if Excellent Stamina cannot be had | Daniel Bartlett, Undercity | None |
+
+#### Believed to Be in Game, Source Unknown
+
+| Enchant | Grade, and for whom | What is known | Materials to watch |
+|---|---|---|---|
+| Crusader | Premier: Arms and Fury warriors, rogues, Cat druids and Enhancement shamans | Scarlet Spellbinders in Western Plaguelands in Classic; very possibly moved | 2 Righteous Orbs |
+| 2H Strength +25 | Budget: Fury and Enhancement two-handers | New in Forever; binds on pickup; no source found | 4 Arcane Crystals |
+| Shield - Excellent Stamina | Premier: Prot warriors. Budget: Prot paladins | On Wowhead Forever; no source found | None |
+| Shield - Critical Strike | Budget: Holy paladins, and Elemental and Enhancement shamans | On Wowhead Forever; no source found | 1 Blood of Heroes |
+| Off-Hand - Excellent Spirit | Premier: Holy priests, Resto druids and Fire mages (Disc priests score Wisdom the same) | On Wowhead Forever; no source found | 2 Nexus Crystals |
+| Off-Hand - Superior Intellect | Premier: Holy paladins | On Wowhead Forever; no source found | 2 Nexus Crystals |
+| Bracer - Superior Agility | Premier and budget: Cat druids, rogues and Survival hunters | New in Forever; binds on pickup; no source found | None |
+| Cloak - Dodge | Premier: Prot warriors, Prot paladins and bears | A drop that binds on pickup; the dropper is not recorded | 3 Nexus Crystals |
+| Winter's Might | Fallback: Frost mages | A drop; the dropper is not recorded | None |
+| Shield - Lesser Block | Fallback: Prot paladins, moving up if Excellent Stamina cannot be had | A drop; the dropper is not recorded | None |
+
+#### Unknown If in Game
+
+| Enchant | Grade, and for whom | Classic source | Materials to watch |
+|---|---|---|---|
+| Healing Power +55 | Premier: every healer's one-hander | Molten Core, which is not in at launch (D3) | 1 Righteous Orb |
+| Spell Power +30 | Premier: damage casters' and Prot paladins' one-handers. Budget: healers' one-handers, and caster staves and Ret two-handers | Molten Core (D3) | 2 Golden Pearls |
+| Gloves - Superior Agility | Premier: the Agility users and tanks | Ahn'Qiraj (D3) | 3 Nexus Crystals |
+| Gloves - Healing Power | Premier: every healer | Ahn'Qiraj (D3) | 3 Nexus Crystals, 1 Righteous Orb |
+| Gloves - Fire, Frost and Shadow Power | Premier: casters of those schools | Ahn'Qiraj (D3) | 2 or 3 Nexus Crystals |
+
+Two of these enchants need a Blood of Heroes for every application: 2H Spellblasting from the Merchant's Favor menu and Shield - Critical Strike. Blood of Heroes is a ground spawn across Western and Eastern Plaguelands, and it binds when picked up, so the enchanter collects it in person: members search different layers in groups of four, leaving a slot so the enchanter can join whichever group finds one.
+
+### C3. Nexus Crystals
+
+The six C1 enchants that take Nexus Crystals, 2H Mighty Spell Power, the Greater Fire and Nature Resistance cloaks and several C2 enchants all need them. Members who order an enchant bring its materials, so the question is where they get crystals and how many, and working that out is part of the hunts in section F.
+
+What is known:
+
+- In Classic, disenchanting an epic gives one Nexus Crystal at item level 56 to 60 and one or two above that; a blue of item level 66 to 70 gives one only 0.5% of the time. Forever's rates are not confirmed.
+- Before raids open, crystals come from disenchanting level-60 dungeon, world and crafted epics.
+- Items from Hyjal Summit and Barrow Deeps are believed to disenchant into Malleable Essence of Nature, the raid-set currency (D2), which is why nothing bought with essence can start before raids open. Whether raid items also give Nexus Crystals is not known; Onyxia's Lair is not named on the essence's tooltip, so its epics may disenchant like other level-60 epics.
+
+What to work out from launch: which dungeon and world epics drop often enough to matter, what raid items actually disenchant into, and whether Forever adds any new source. That feeds one decision for leadership (I2): a loot rule for unneeded dungeon and world epics, saying which are disenchanted rather than sold or kept for off-specs, and where the crystals go. What an item disenchants into is fixed by the item, so the rule decides whether to disenchant, not what comes out.
+
+---
+
+## D. Faction Vendors and Raid Recipes
+
+### D1. Factions Worth Grinding, and a Bead Vendor
+
+The reputation vendors sell recipes for gold once a character holds the standing, and the recipes bind, apart from the two oil formulas, so each faction's recipes live on whoever grinds it. These are the factions with enchants worth having. Who each enchant is for is in C2. Every enchant in the table also needs the enchanter's own Runed Arcanite Rod (B3); the oils need only the Runed Truesilver Rod. None of these grinds should fall to the Merchant's Favor crafters, whose days go to Durotar deliveries; section F covers who takes them. No faction confirmed in Forever sells Alchemy recipes worth a grind; the flasks are in section E.
+
+| Faction | Standing | What it unlocks |
+|---|---|---|
+| Timbermaw Hold (Meilosh, Felwood) | Friendly, Honored, then Revered | 2H Agility +25 at Friendly; Weapon Agility +15 at Honored; Shield - Law of Nature at Revered |
+| Argent Dawn (the Argent quartermasters, Tirisfal Glades and the Plaguelands) | Honored, then Revered | Bracer - Mana Regeneration at Honored (no spec's top pick); Bracer - Healing Power +24 at Revered |
+| Thorium Brotherhood (Lokhtos Darkbargainer, Blackrock Depths) | Friendly, Honored, then Revered | Weapon Strength +15 at Friendly; Mighty Spirit at Honored; Mighty Intellect at Revered. Tied to Molten Core, so it may change with the rework (D3) |
+| Cenarion Circle (Kania, Mishta and Vargus, Silithus) | Friendly, then Honored | Greater Fire Resistance cloak for Onyxia at Friendly and Greater Nature Resistance cloak at Honored (3 and 2 Nexus Crystals; the data also lists both at Lokhtos, for Thorium Brotherhood Honored); the Wizard Oil and Lesser Mana Oil formulas, which trade and need no standing (the data also lists them at Lokhtos). Also glove patterns at Friendly and belt and boot patterns at Honored for every armour crafter, skill 285 to 295 |
+
+**Thorium Brotherhood past Honored.** In Classic, Dark Iron Residue counted only up to Honored. Past that, the turn-ins were Molten Core materials (Fiery Core, Lava Core, Core Leather and Blood of the Mountain) and Dark Iron Ore. Molten Core is not in at launch (D3), so Dark Iron Ore is the only path: 50 reputation for every 10 ore, about 2,400 ore from Honored to Revered. Whether Mighty Intellect is worth that is questionable, and the plan leaves it open. Forever may add other turn-ins; the first visit to Lokhtos shows which he accepts (G5).
+
+**Deadwood Tribal Beads.** Dala Fairmaw in Mount Hyjal is reported to sell four recipes for these beads, with no standing needed: Formula: Enchant Gloves - Lotus Claw (Enchanting 295; the Runed Arcanite Rod and a Death Lotus each time), Recipe: Alchemist's Stone (Alchemy 275 at an Alchemy Laboratory; 2 Black Vitriol each, the rare find the Philosopher's Stone needs) and Pattern: Mooncloth Reagent Bag (Tailoring 255, the reagent-bag line in B2) for 10 beads each, and Recipe: Sweetpaw Jam (Cooking 275) for 5. The effects of Lotus Claw and the Alchemist's Stone are not recorded yet. Where the beads come from is not known yet; the name points at the Deadwood furbolgs of Felwood (G5).
+
+### D2. Raid Sets
+
+Aisarra Nightmeadow in Mount Hyjal sells 72 epic raid-set patterns for Malleable Essence of Nature, which is believed to come from disenchanting items from Hyjal Summit or Barrow Deeps; no standing is recorded for her. Each pattern costs 6 or 8 essence and each craft another 3 or 5, and every piece needs a skill-300 station (section E). The plan only notes that they exist: nothing can be bought before raids open, and too little is known about raid drops to plan for them. The reference page lists them.
+
+### D3. Molten Core, Zul'Gurub and Later Raids
+
+Molten Core and Zul'Gurub are not in at launch. Molten Core is being reworked and may drop different things, so recipes that came from it in Classic could turn up in the open world, somewhere new, or nowhere anyone has found, and the factions tied to these raids (Thorium Brotherhood, Zandalar Tribe) may change too. Ahn'Qiraj and Naxxramas recipes are unknown. Nothing in the plan depends on any of them, and the reference page tags them so the first sighting can be logged.
+
+The Zandalar Tribe sells the formulas for Brilliant Wizard Oil and Brilliant Mana Oil, the best caster and healer weapon oils, but its standing came from Zul'Gurub, which is not in at launch. They are worth pursuing if a new source turns up.
+
+---
+
+## E. The Station Line
+
+A player camp (A4) is a campfire with crafted stations placed around it, and some recipes can only be made at the right station. A blueprint teaches a crafter to make a station; the station does not bind, so one crafter can supply every camp, and each placement uses one up. A placed station is expected to serve everyone at the camp, which would make high-end crafting a scheduled group activity.
+
+Blueprints come in two tiers of twelve: the skill-140 ones drop from known dungeon bosses (table below), and nobody knows yet where the skill-300 ones come from. Skill-300 crafting, including flasks, needs skill-300 stations, and six of the skill-300 blueprints matter to this plan: the Alchemy Laboratory, Master Forge, Sewing Machine, Loom, Iron Oven (19 Cooking recipes, 13 of them at 275) and Molten Foundry, which smelts Heavy Thorium for skill-300 Blacksmithing and Engineering crafts, both directly and as the alchemist's Legionite Bars (a transmute on the same cooldown as the Arcanite Bars for the rods, B3). A seventh, the Plague Doctor's Laboratory, matters if Major Healing Potions turn out to need it (G5). The guild should make a steady effort to hold every skill-300 blueprint; the plan does not map every recipe to its station.
+
+**Finding the blueprints** is the hunts' main job (section F):
+
+1. **The skill-140 blueprints, early.** Each drops from a known dungeon boss (table below), and blueprints trade, so one drop covers the guild. The Fermenter and Arcane Salvager matter most to the Merchant's Favor line (B3).
+2. **Test a camp** once the first blueprint is in hand: how long it lasts (the client says 15 minutes; one player reports an hour), whether a station works for people who did not place it, and how much the Arcane Salvager adds to disenchanting.
+3. **The skill-300 blueprints, from the first level-60 dungeon group.** Where they drop is unknown; level-60 dungeon bosses are an assumption, not a fact. The reagent text in step 4 points at Scholomance, Stratholme and Blackrock Depths, so run those early, but keep every level-60 dungeon in the rotation, the new ones included: nobody knows what the new dungeons drop, or whether they drop any patterns at all. Every level-60 run reports any blueprint and what dropped it. If the drop rate turns out low, buying one on the auction house may be worth it, within leadership's limit (I2).
+4. **The station reagents.** Each placement uses one: Lich's Index Finger for the Laboratory, Golem Heart for the Master Forge, Undeath Engine for the Sewing Machine and Bottled Screams for the Loom; the Molten Foundry and Iron Oven need none. Their in-game text hints at where they come from: the Undeath Engine powers "Vectus's Sewing Machine" (Vectus is in Scholomance), Bottled Screams power "the Baroness's mysterious Loom" (Baroness Anastari is in Stratholme), the finger's name points at a lich such as Ras Frostwhisper in Scholomance, and the Golem Heart is a "molten heart", which points at the golems of Blackrock Depths, such as its Molten War Golems and Golem Lord Argelmach. All four trade. Log where each drops the first time it is seen, and keep a few of each in the bank.
+5. **Workshop nights**, once the first skill-300 station is in hand: build an Expert Campfire (Cooking 220 to use, with room for ten camp objects), place the stations that week's crafting needs, and have everyone with a skill-285-plus recipe craft in the same window, with the bars, bolts and leather made beforehand.
+
+| Skill-140 blueprint | Boss | Dungeon |
+|---|---|---|
+| Fermenter, Arcane Salvager | Rath'mael | Ruins of Lordaeron |
+| Greenhouse | Shadetooth | Excavation Site: Wetlands |
+| Rock Garden | Relic Guardian | Excavation Site: Wetlands |
+| Tanning Rack | Razorclaw the Butcher | Shadowfang Keep |
+| Toxin Study | Commander Springvale | Shadowfang Keep |
+| Spinning Wheel | Unstable Sentinel | City of Dalaran |
+| Anvil, Repair Bot, Cookie's Feast | Gilnid, Sneed and Cookie | The Deadmines |
+| Field Guide | Lady Anacondra | Wailing Caverns |
+| Fishing Rack | Gelihast | Blackfathom Deeps |
+
+**Flasks** sit at the end of this line. Every flask needs Alchemy 300, an Alchemy Laboratory and one lotus.
+
+- **The five Classic flasks** take Black Lotus. Four of their recipes historically drop in level-60 dungeons: Flask of the Titans from General Drakkisath, Supreme Power from Ras Frostwhisper, Distilled Wisdom in Stratholme and Chromatic Resistance from Gyth. Petrification is a world drop; Frostmaul Giants in Winterspring drop it most often in the data.
+- **Pix Xizzix** in Stranglethorn is reported to sell all five Classic flask recipes for 50 Tarnished Undermine Real each. Forever's Tarnished Undermine Real is a different currency from the Season of Discovery one of the same name, so guides to that one do not say where it comes from; nobody knows yet, and H2 covers what to do once someone finds out.
+- **The four new Natural flasks** (Accuracy, Aggression, Precision and Swiftness) take Death Lotus and new herbs such as Demonsage and Marefoil. Where their recipes come from is not known yet.
+
+---
+
+## F. Responsibilities to Take On or Delegate
+
+The work falls into six areas. Supply and the hunts bring things in; the Merchant's Favor line and crafting turn them into recipes, elixirs, enchants and gear for members; faction standing adds the D1 recipes; and records keeps track of all of it. An area can be one person or several, and one person can work in several areas, except the Merchant's Favor crafters, whose time goes to the Merchant's Favor line (B2). The Merchant's Favor line and the guild funds, which sit under supply, need someone within the first two weeks (I1); the other areas can be filled as the roster settles. Who takes what is for leadership, so the last column is left for its names.
+
+| Area | What it covers | Taken on by |
+|---|---|---|
+| The Merchant's Favor line | The guild's main alchemist and main enchanter, on one character or two (section B): filling the crates supply brings in, writs and then receipts to Honored (G3), buying down the C1 lists with the Merchant's Favor from the guild's crates, then making elixirs and potions and applying enchants to order. A backup crafter is planned now but begun only once the first crafters are fully set up (Honored, skill 300 and their C1 list bought), at a slower pace (I2) | |
+| Crafting | Every other crafter. Early on, the writ crafters: a shelf of writ items and green-crate stock (bars, bolts, cured hides, parts), each profession making its own as skill allows. Then a blacksmith at 250 for the Arcanite Rods (B3), gear crafters at 300 for faction gear, and a miner at 300 for Heavy Thorium (section E). The camp test and the workshop nights (section E) | |
+| Supply | Managing the guild funds and watching the auction house for deals (I1): buying with guild gold what cannot be farmed (crates and envelopes early, blueprints, recipes nobody holds) within leadership's limits. Getting crates, writs and materials to the right crafter: routing what members hand in (G1), the weekly wanted list, and the gatherers and group farming runs when something runs short | |
+| Dungeon and world hunts | Whatever only drops: the blueprints and station reagents (section E), the Blood of Heroes searches with the enchanter (C2), and where Nexus Crystals come from, with a proposed loot rule for unneeded dungeon and world epics (C3) | |
+| Faction standing | The D1 grinds: one enchanter per faction, one taking all of them, or another arrangement, depending on how many enchanters the guild has at level 60. Each gear crafter also needs their own Cenarion Circle standing, since its armour patterns bind | |
+| Records | The shared record of what came in and went out (G4), which the crafters fill in as they go; logging the G5 results and in-game corrections as they are reported; and keeping the reference page and this plan current | |
+
+---
+
+## G. Operations
+
+### G1. What Members Contribute, in Priority Order
+
+These are suggestions for leadership to adopt or not. Each is worth more pooled than to any one member.
+
+1. **Anything from Durotar Supply and Logistics**: unfilled Waylaid Crates, writ envelopes and opened writs, the materials that fill crates, and the crafted items writs ask for. The crates, envelopes and writs are the one ask before launch (I1). Crates come in unfilled, because only the character who fills one earns its Merchant's Favor (B1). Duplicate writs are still useful, but a character can hand in only one copy of a writ a day, so a spare copy goes to the other crafter in the two-character option, or is sold. Crates nobody wants to fill still count: they can become Forged Delivery Receipts (G3).
+2. **Low-value BoEs** to disenchant.
+3. **The bonus gathering materials**, the rare extras that Mining, Herbalism and Skinning turn up. For Mighty Healing Power: Pitchblende (smelted into its Azerothium Bars), Torbernite and Fel Crystal from Mining, and Stranglevine from Herbalism. For the deferred C1 enchants (Insight, Recovery, and the necklaces through their dyes) and for crafted gear: Pyrite from Mining; Rosecap and Frilled Lichen from Herbalism; Pristine Leather and Pristine Hide from Skinning, and Fel Leather once its source is known.
+4. **Black Vitriol, Arcane Crystals and Golden Pearls** for the Runed Arcanite Rod (B3). Miners find Black Vitriol in Mithril and Dark Iron deposits and Thorium veins, and Arcane Crystals in Thorium veins.
+5. **Blueprints they cannot place and the four station reagents**, with a note of which boss dropped them, and **recipes for any item a writ asks for** that they cannot use themselves (Alchemy recipes, patterns, plans or schematics).
+6. **Herbs, cloth, ore and leather against a posted weekly list.**
+
+**When something runs short, the recommendation is to farm it as a guild rather than buy it,** keeping guild gold for limited items that unlock something new, such as recipes, blueprints, crates and writ envelopes.
+
+### G2. Crates and Merchant's Favor
+
+Crates pay 5 to 30 Merchant's Favor depending on tier and rarity, and nobody knows yet which ones the guild will get in numbers. Higher tiers pay more but ask for dearer bundles; lower ones mean many more crates to find and fill:
+
+| Crate | Merchant's Favor each | Crates for the Enchanting list | Crates for the Alchemy list |
+|---|---:|---:|---:|
+| Apprentice white | 5 | 432 | 372 |
+| Apprentice green or Journeyman white | 10 | 216 | 186 |
+| Expert white | 15 | 144 | 124 |
+| Journeyman green | 20 | 108 | 93 |
+| Expert green | 30 | 72 | 62 |
+| Artisan | Not recorded | – | – |
+
+- **Turn crates in as they arrive.** Once the crafters are chosen, each knows their target, the C1 list total plus any receipts (G3), and fills and turns in each crate as soon as its bundle is in hand. Until then, or while a crate waits for materials, it costs only bank space.
+- **Merchant's Favor from the guild's crates goes to approved recipes only, and every turn-in and purchase is recorded.** The Merchant's Favor crafter spends it on the C1 lists, receipts and anything else leadership approves, and logs each turn-in and purchase in the shared record (G4).
+- **White crates take raw materials; green crates take crafted stock** from the writ crafters.
+- **The easiest bundle wins.** Each crate takes any one of several bundles; fill it with whichever the guild has or can farm most easily (the reference page's Waylaid Crates tab lists them). A crate whose every bundle is expensive goes to a receipt or the auction house.
+- **Buy early.** Crates and envelopes should be cheapest before more players reach 60 and earn more gold, so supply should pick them up early, checking with leadership until the spending limits are set (I2). Expect prices to rise as raids approach and people start panic buying.
+- **Raid-prep materials are the last thing to spend.** Some crate bundles and writs take a material the plan's top enchants, oils, elixirs, potions or flasks need; they are the least desirable to fill or deliver while levelling. Every such crate but Earthly Artisan Herbs has a bundle the raid prep does not need, so use that one; Earthly Artisan Herbs goes to a receipt or the auction house while the alchemist is short. The [appendix](#appendix-raid-prep-materials) lists them.
+
+**Performance Bonus (optional).** A perk from Forever's Legacy system: a 5, 10 or 15% chance of double Merchant's Favor per crate turned in (ranks 1 to 3), so rank 3 cuts the counts above by about 13%. It is free with spare Legacy points (account-wide, 16 at launch, spent per character); otherwise it takes a respec, which costs 10 gold the first time and 20 the second.
+
+### G3. Reputation: Writs and Forged Delivery Receipts
+
+Each Merchant's Favor crafter needs 7,000 reputation past the Shipping Label to reach Honored, the slowest part of the plan. There are two ways to earn it, and which is cheaper depends on writ and crate prices nobody will know until launch, so plan to use both. Three trades are involved:
+
+| Put in | Get | Limit |
+|---|---|---|
+| A writ, the crafted item it asks for (often expensive) and a trip to its customer | 75, 125 or 200 reputation, by tier | Each distinct writ once a day per character |
+| A Waylaid Crate and the materials for one of its bundles | 5 to 30 Merchant's Favor, by tier and rarity (Artisan not recorded) | None recorded |
+| From Friendly: any Waylaid Crate, even a cheap one nobody wants to fill, and 15 Merchant's Favor for a Forged Delivery Receipt | 50 reputation | Friendly to Honored only |
+
+**Writs.** A writ asks for a crafted item and names the customer to deliver it to. It pays 75 reputation at Journeyman, 125 at Expert and 200 at Artisan, and each distinct writ pays once a day per character, so variety matters more than volume: a pile of copies of one writ cannot be handed in on one visit. There are 45 Journeyman, 60 Expert and 45 Artisan writs. Honored takes about 94 Journeyman, 56 Expert or 35 Artisan hand-ins.
+
+- **Envelopes or opened writs.** An envelope opens a random writ of its tier; an opened writ on the auction house is a known one. The guild can fill about 56% of Journeyman writs, 58% of Expert and 38% of Artisan today (those whose recipe comes from a trainer or vendor, if the writ crafters have the skill). Envelopes also buy the writs the guild cannot fill, so the test is resale. If those sell on for about an envelope's price, buy envelopes. If they barely sell, buy envelopes only under about half an opened writ's price (a third at Artisan), and otherwise buy writs already opened. The Artisan share rises as members find recipes from drops and quests.
+- **Three options for every writ:** fill it, sell it, or reroll it into a different writ of the same tier (rerolls come later; see below). Which wins depends on what writs sell for against crates, and on how much writs differ in value. If writs all sell for about the same, selling one the guild cannot fill and buying one it can is the stronger move. If a writ sells for very little, because it is impossible or expensive to fill, a reroll becomes more attractive. Filling includes buying the crafted item: until the writ crafters have the skill, that is how the first writs get filled.
+- **Rerolls are for the second crafter.** Kurvelk Shadowhoof, the Uncertified Scribe at the camp outside the Crossroads, sells the Forger's Quill for 15 Merchant's Favor (half a crate to three crates filled), but only from Honored, and the quill binds. So rerolls serve only the second crafter in the two-character option, once the first has reached Honored: the first crafter rerolls, and the new writ trades. That is a reason to bring one crafter to Honored before starting the other's climb.
+- **Non-raid evenings.** If the Merchant's Favor crafter raids, delivery circuits and workshop nights go on non-raid evenings.
+
+**Forged Delivery Receipts.** Once a crafter is Friendly, Merchant's Favor and a crate buy reputation directly, with no delivery:
+
+1. Buy a Forged Delivery Receipt for 15 Merchant's Favor from Kurvelk Shadowhoof, the scribe above.
+2. Use it on any Waylaid Crate, of any tier or kind, unfilled. It turns the crate into a Notarized Shipping Container.
+3. Hand the container to Dokimi, at the same camp, for 50 reputation.
+
+So each 50 reputation costs one crate of any kind plus 15 Merchant's Favor, with no recorded daily limit and no travel. Friendly to Honored is 120 receipts: 120 crates to put receipts on, plus 1,800 Merchant's Favor on top of the C1 lists, which is 60 more crates filled at 30 Merchant's Favor each or 360 at 5. The first 1,000 reputation past the Shipping Label still has to come from writs, because the scribe sells receipts only at Friendly.
+
+**Writs or receipts.** Per 1,000 reputation, receipts cost 20 crates plus 300 Merchant's Favor (10 to 60 more crates filled, depending on tier), and writs cost 5 Artisan, 8 Expert or 14 Journeyman writs plus their items and the travel; whichever is cheaper on the auction house that week wins. Receipts pull ahead when writs are scarce or dear compared with crates (if writs turn out ten times rarer than crates, receipts could carry most of the grind), when some crates are cheap because nobody wants to fill them, when the Merchant's Favor crafter's time is the limit (everything happens at the camp), or when the day's distinct writs are used up. The beta guides say any crate works; the first receipt confirms it (G5).
+
+### G4. Running It Fairly
+
+- **A visible record, and recognition.** One shared sheet of what came in (crates, writs, materials, by whom) and what went out (Merchant's Favor earned and spent, recipes bought, elixirs and enchants made, for whom, at what price), with the top contributors named. Members put in more when they can see what their work built and that it is noticed.
+- **It goes both ways.** One option is for members who put in more than the contributions in G1 to get their own crafting first and at the lowest price; the record shows what they gave.
+- **Say what the Merchant's Favor crafter puts in and gets.** The guild supplies the crates and farms the levelling materials together, so the Merchant's Favor and recipes are the guild's investment held on that character: the Merchant's Favor goes only to approved recipes, the recipes and standing stay on that character, and that character crafts for the guild's members in return. Making that explicit up front heads off resentment later.
+
+**Rewarding those who contribute.** Leadership could reward the members who contribute most in other ways, for example:
+
+- Convenience items set aside for top contributors outside DKP, such as the Onyxia Hide Backpack.
+- The honor of turning in the Head of Onyxia.
+- The privilege of wearing the guild tabard, withheld until earned and then presented at a ceremony recognizing the member's achievements.
+- A guild raid on the Gurubashi Arena with the member as the one who opens the treasure chest, so they get the Arena Grand Master trinket on their main or an alt.
+- A Discord role or flair for top contributors.
+- Choosing the movie for movie night.
+
+### G5. Measurements and Checks
+
+Each measurement is reported to records, which logs it. Some come in during the first week; others wait for the first level-60 characters, the first visits or the first raids, and any of them can change the plan.
+
+| Measurement | When | Decides |
+|---|---|---|
+| Crates looted per member-hour by tier and rarity, and Merchant's Favor per Artisan crate (not recorded yet), from three members' ForeverArtisan addon logs | Week one, then weekly | How many crates the guild loots and how many it buys, and which tiers the Merchant's Favor and receipt counts should use |
+| Auction-house prices of crates, envelopes and opened writs, and how well unfillable writs resell | Week one, then weekly | Whether to fill, sell or reroll each writ; writs or receipts; envelopes or opened writs (G3); and the spending limits (I2) |
+| Members at 55-plus and at 60 | Weekly | How accurately the timelines can be assessed, and when the level-60 work starts (H1, H2) |
+| The first Forged Delivery Receipt: does it work on any crate | First crafter at Friendly | Whether receipts are an option (G3) |
+| Standings and prices at Kania, Mishta, Vargus, Meilosh, Lokhtos (and which reputation turn-ins he accepts), the Argent quartermasters and Aisarra Nightmeadow, and the bead prices at Dala Fairmaw (D1) | First visit to each | Which faction grinds are cheap, and whether Aisarra needs standing (D2) |
+| Camp lifetime, whether stations serve everyone, the Arcane Salvager's effect | First blueprint | Workshop night format |
+| Whether Major Healing Potions need a camp station (the camp data calls the Toxin Study and the Plague Doctor's Laboratory healing-potion stations) | When a First Aid crafter reaches 290 | Whether the Plague Doctor's Laboratory matters (section E) |
+| Whether the Whale and Sages are both on the vendor with the same effect and whether they stack, whether Wicked Regeneration stacks with Greater Mageblood, and any effect that differs from the page | At the vendor, then the first crafts | The purchase order (C1) |
+| How long a Blood of Heroes search takes | The first searches | Whether Spellblasting keeps its place or 2H Mighty Spell Power stands in (C1) |
+| What dungeon and world epics disenchant into, and later what raid items give, Onyxia's Lair first | First level-60 runs; raid items after 9 December | The loot rule (C3) |
+| Where Deadwood Tribal Beads, Forever's Tarnished Undermine Real, the station reagents, the skill-300 blueprints, Recipe: Greater Arcane Elixir, Recipe: Elixir of the Mongoose, Recipe: Transmute Legionite and the old Molten Core formulas come from, reported by anyone who sees one | Whenever seen | The branches (H2) |
+
+---
+
+## H. Schedule and Branches
+
+### H1. Mainline
+
+As we get more people to level 60 we can assess timelines more accurately. Until then the plan runs in this order, and each phase starts when the guild's levels allow it, not on a fixed day; the only fixed dates are launch on 4 November and raid opening on 9 December.
+
+| Phase | What has to be true at the end |
+|---|---|
+| Before launch | Members asked to send every Waylaid Crate, writ envelope and opened writ to the guild bank. The reference page shared |
+| First weeks | Within two weeks: the Merchant's Favor crafters chosen, the rest of the member contributions decided and someone managing the guild funds. Crates and envelopes flowing to the bank. Measurements taken. Each Merchant's Favor crafter at the character level that opens the crates the guild has (10 for Apprentice and Journeyman, 20 for Expert, 35 for Artisan) and at Friendly (1,000 reputation from writs past the Shipping Label). The alchemist buying the three Friendly elixirs as skill allows: 360 Merchant's Favor, or 310 after the label's 50, which is 11 crates at 30 Merchant's Favor or 62 at 5. Skill-140 blueprint runs as dungeon levels allow |
+| Reputation | Each Merchant's Favor crafter delivering writs and, once the first receipt is tested, using receipts where they are cheaper, to reach Honored. Writ crafters at 200, writ shelf stocked. Herbalists supplying the alchemist. Gatherers banking bonus materials. First 55-plus members starting Cenarion Circle, Timbermaw, Argent Dawn and Thorium Brotherhood (to Honored). The rare finds for the Runed Arcanite Rod in the bank (B3) |
+| Production | Honored recipes bought down both purchase orders. The Runed Arcanite Rod under way from the day the alchemist reaches 275 (B3). Gear crafters at 300 and Cenarion Friendly; skill-300 blueprint hunt in every level-60 dungeon, old and new; the loot rule for unneeded dungeon and world epics in use; first workshop night |
+| Raid opening | The crafters taking orders for elixirs, potions and enchants; what was made, and for whom, recorded for a review after the first raid week |
+
+The aim for raid opening: the core elixirs, the bracer, two-handed, off-hand and glove enchants, and whichever faction gear the gear crafters' standings, materials and stations allow.
+
+### H2. Branches and Risks
+
+| Trigger | Response |
+|---|---|
+| Writs turn out much scarcer or dearer than crates | Shift the grind to Forged Delivery Receipts (G3) and raise the Merchant's Favor targets to match |
+| Someone finds where Forever's Tarnished Undermine Real comes from | Form a team to earn it at once: Pix Xizzix's five flask recipes cost 50 each and do not bind, so anyone can buy them for the alchemist |
+| A skill-300 blueprint boss is identified | That instance goes to the top of the dungeon rotation until the guild holds the blueprint |
+| The crate rate comes in low | Leadership decides how many to buy (I2); Merchant's Favor has no cap, so the purchase order slows only as far as the budget does |
+| Camps last only 15 minutes, as the client says | Workshop nights pre-craft every intermediate and queue crafts before placement |
+| The skill-300 blueprints turn out to drop in the new raids | Leadership decides whether the station line moves behind the raid schedule (I3) |
+| The Merchant's Favor crafter's skill falls behind | The herbalists farm the levelling herbs and a dungeon group runs for greens to disenchant |
+| Fel Crystal, Torbernite, Stranglevine or Pitchblende run short | Mighty Healing Power waits; nothing else on the Enchanting list needs them |
+| The guild's 60s arrive slowly | The level-60 work moves with them: the faction grinds, the Production phase and the level-60 hunts. The reputation grind, the Friendly purchases and the skill-140 blueprints do not wait |
+| The Runed Arcanite Rod is held up | Buy the Arcanite Bars or a Golden Pearl, or have an alchemist who already owns a Philosopher's Stone make the bars (B3) |
+
+---
+
+## I. Decisions for Leadership
+
+Each decision is listed at the point where leadership will have what it needs to make it.
+
+### I1. Before Launch, and in the First Two Weeks
+
+**Before launch, one ask.** Members send every Waylaid Crate, writ envelope and opened writ they find to the guild bank (G1). These drop from day one and are worth far more pooled than kept, and with them in the bank nothing else has to be settled before launch.
+
+**Within the first two weeks, three decisions:**
+
+1. **One Merchant's Favor crafter or two, and who? (section B)** Merchant's Favor and Durotar reputation stay with the character that earns them, so the banked crates and writs wait for this answer. One character saves a second reputation grind; two spread the work and the risk, and let the alchemist gather their own herbs. A3 has the totals.
+2. **What else are members asked to contribute? (G1)** Beyond crates and writs: low-value BoEs to disenchant, the bonus gathering materials, the rare finds for the Runed Arcanite Rod (B3), blueprints, station reagents and recipes for writ items, and herbs, cloth, ore and leather against a weekly list.
+3. **Who manages the guild funds and watches the auction house for deals?** Crates and envelopes should be cheapest early, before more players reach 60 (G2).
+
+### I2. As the Information Comes In
+
+| When | Decide |
+|---|---|
+| Week one, then weekly | How many crates and writs the bank buys toward each list, based on the crate count and auction-house prices (G5) |
+| Once auction-house prices are in | Spending limits: the most the bank pays for crates, envelopes and blueprints, and the amount above which a purchase needs leadership's approval. Revisit them as prices move. A pattern that only drops can be worth far more than a vendor one |
+| Once a Merchant's Favor crafter is Friendly | Writs, Forged Delivery Receipts or a mix for the climb from Friendly to Honored. **A writ:** craft the item it asks for and deliver it, for 75 to 200 reputation. **A receipt:** pay 15 Merchant's Favor for it, put it on any spare crate, and hand the crate in at the camp outside the Crossroads, for 50 reputation. Doing the whole climb by receipt takes 120 spare crates plus 1,800 Merchant's Favor, and earning that Merchant's Favor means filling another 60 to 360 crates. Choose whichever costs less that week (G3) |
+| When members reach 55 to 60 | Who grinds which faction (D1), depending on which enchanters the guild has at 60. Each enchanter who applies faction enchants needs their own Runed Arcanite Rod (B3), so the fewer faction enchanters, the fewer rods to make. Each gear crafter also needs their own Cenarion Circle standing |
+| As crafters near 300 | Whether the gear crafters are the writ crafters pushed on to 300, or separate people |
+| When level-60 dungeon runs start | A loot rule for unneeded dungeon and world epics: which are disenchanted rather than sold or kept for off-specs, and where the crystals go (C3) |
+| Once the first Merchant's Favor crafters are fully set up (Honored, skill 300, C1 list bought) | Backup crafters, built up over time without pressure: when to start one, which line first, and how fast (section F) |
+
+### I3. If Something Changes
+
+| If | Decide |
+|---|---|
+| Skill-300 blueprints rarely drop | Whether to buy one on the auction house (section E) |
+| Skill-300 blueprints drop only in raids | Whether to move the station line and workshop nights behind the raid schedule (section E) |
+
+---
+
+## Appendix. Raid-Prep Materials
+
+These crate bundles and writs take a material that the plan's top enchants, oils, elixirs, potions or flasks need, so they are the last to fill or deliver while levelling (G2).
+
+| Material | Raid prep that needs it | Crate bundle that takes it | Writs that take it |
+|---|---|---|---|
+| Large Brilliant Shard | Most premier enchants, each Runed Arcanite Rod, and both Brilliant oils if a source turns up (D3) | Artisan Curiosities | – |
+| Small Brilliant Shard | Each Runed Arcanite Rod, once | Artisan Curiosities | – |
+| Dream Dust | Lesser Mana Oil | Artisan Curiosities | Wizardweave Turban (Artisan Tailoring) |
+| Small Radiant Shard | Fiery Weapon | Expert Curiosities | – |
+| Purple Lotus | Greater Spellpower, Spellblasting, Greater Cleric's Elixir, Lesser Mana Oil, the Philosopher's Stone (once), and Brilliant Mana Oil if a source turns up (D3) | Flowering Expert Herbs | Dreamless Sleep Potion (Artisan Alchemy), Wildvine Potion (Expert Alchemy), Cenarion Herb Bag (Artisan Tailoring) |
+| Arthas' Tears | Greater Mageblood and Greater Cleric's Elixir | Flowering Expert Herbs | Gift of Arthas (Artisan Alchemy) |
+| Firebloom | Wizard Oil, the Philosopher's Stone (once), and Brilliant Wizard Oil if a source turns up (D3) | Flowering Expert Herbs | Goblin Rocket Fuel (Expert Alchemy) |
+| Dreamfoil | Owl, Whale, Cunning, Wicked Regeneration, Major Mana Potion and three flasks | Flowering Artisan Herbs | Greater Fire Protection Potion and Major Rejuvenation Potion (Artisan Alchemy) |
+| Mountain Silversage | Owl and four flasks | Flowering Artisan Herbs | Flask of Chromatic Resistance (Artisan Alchemy) |
+| Icecap | Major Mana Potion and three flasks | Flowering Artisan Herbs | Flask of Chromatic Resistance (Artisan Alchemy) |
+| Golden Sansam | Phalanx, Nature Power, Wicked Regeneration, Major Healing Potion and a Natural flask | Earthly Artisan Herbs | Major Rejuvenation Potion (Artisan Alchemy) |
+| Sungrass | Fortitude, Phalanx, Nature Power and Superior Mana Potion | Earthly Artisan Herbs | – |
+| Blindweed | Greater Mageblood, Grizzly and Superior Mana Potion | Earthly Artisan Herbs | Gift of Arthas and Limited Invulnerability Potion (Artisan Alchemy) |
+| Ghost Mushroom | Ferocity | Earthly Artisan Herbs | Limited Invulnerability Potion and Potion of Demon Slaying (Artisan Alchemy) |
+| Gromsblood | Ferocity, Cunning, Grizzly, Whale and Flask of the Titans | Earthly Artisan Herbs | Distilled Firewater, Draught of Detect Demon and Potion of Demon Slaying (Artisan Alchemy) |
+| Black Lotus | Every Classic flask | – | Flask of Chromatic Resistance (Artisan Alchemy) |
+| Essence of Earth, Essence of Fire | Law of Nature, Excellent Stamina, the Superior Strength gloves, Strength +15, Spell Power +30, Fiery Weapon and the Greater Fire Resistance cloak | – | Volcanic Breastplate (Artisan Leatherworking) |
+| Living Essence | Bracer - Healing Power +24 and Healing Power +55 | – | Lifelike Mechanical Toad (Artisan Engineering) |
+| Arcane Crystal | 2H Strength +25 (four each time) and, as three Arcanite Bars, each Arcanite Rod | – | Arcanite Skeleton Key (Artisan Blacksmithing), as an Arcanite Bar |
+
+The bundles the raid prep does not need: Greater Nether Essence in Artisan Curiosities (and its Small Brilliant Shards once the guild's rods are made), Vision Dust, Greater Mystic Essence or Large Radiant Shards in Expert Curiosities, Wintersbite in Flowering Expert Herbs, and Plaguebloom in Flowering Artisan Herbs (until someone has the Mongoose recipe, which takes it). No crate or writ takes Illusion Dust, Greater Eternal Essence or Nexus Crystals.
+</script>
+<script>
+(function(){
+const esc = s => String(s==null?'':s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function md(src, ids){
+ const lines = src.replace(/\r/g,'').split('\n');
+ const top = !ids;
+ const hid = t => { const m = t.match(/^([A-J]\d?)\.\s/); return m ? m[1].toLowerCase() : t.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,''); };
+ if(top){ ids = new Set(); lines.forEach(l => { const m = l.match(/^#{1,6}\s+(.*)$/); if(m) ids.add(hid(m[1])); }); }
+ let out = [], toc = [], i = 0, inList = null, listBuf = [];
+ const inline = s => esc(s)
+  .replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/(^|[^*])\*(?!\*)(.+?)\*(?!\*)/g,'$1<i>$2</i>')
+  .replace(/`([^`]+)`/g,'<code>$1</code>').replace(/\[([^\]]+)\]\(([^)]+)\)/g,(m,t,u) => u[0]==='#' ? `<a href="${u}">${t}</a>` : `<a href="${u}" target="_blank" rel="noopener">${t}</a>`);
+ // section references become links: "H5", "C1", "section C"
+ const secs = h => h.replace(/(<[^>]+>)|\b(sections? )?([A-J][1-9]?)\b/g, (m, tag, pre, code) => {
+  if(tag) return m;
+  const id = code.toLowerCase();
+  return ids.has(id) && (pre || code.length > 1) ? (pre||'') + `<a href="#${id}">${code}</a>` : m; });
+ const il = s => secs(inline(s));
+ const flushList = () => { if(inList){ out.push(`<${inList}>${listBuf.join('')}</${inList}>`); inList=null; listBuf=[]; } };
+ while(i<lines.length){
+  const l = lines[i];
+  if(/^\s*$/.test(l)){ flushList(); i++; continue; }
+  let m;
+  if((m=l.match(/^(#{1,6})\s+(.*)$/))){ flushList(); const n = m[1].length, id = hid(m[2]);
+   if(n===2) toc.push(`<a href="#${id}">${inline(m[2])}</a>`);
+   out.push(`<h${n} id="${id}">${inline(m[2])}<a class="hl" href="#${id}" aria-label="Link to this section">#</a></h${n}>`); i++; continue; }
+  if(/^---+\s*$/.test(l)){ flushList(); out.push('<hr>'); i++; continue; }
+  if(/^\|/.test(l)){ flushList(); const tbl=[]; while(i<lines.length && /^\|/.test(lines[i])){ tbl.push(lines[i]); i++; }
+   const cells = r => r.replace(/^\||\|$/g,'').split('|').map(c=>c.trim());
+   const isSep = r => /^\|\s*:?-{2,}/.test(r);
+   const sep = tbl.find(isSep); const al = sep ? cells(sep).map(c => /-:$/.test(c) ? ' class="num"' : '') : [];
+   const head = cells(tbl[0]); const body = tbl.slice(1).filter(r=>!isSep(r));
+   out.push(`<div class="tw"><table><tr>${head.map((c,k)=>`<th${al[k]||''}>${inline(c)}</th>`).join('')}</tr>${body.map(r=>`<tr>${cells(r).map((c,k)=>`<td${al[k]||''}>${il(c)}</td>`).join('')}</tr>`).join('')}</table></div>`); continue; }
+  if(/^>/.test(l)){ flushList(); const q=[]; while(i<lines.length && /^>/.test(lines[i])){ q.push(lines[i].replace(/^>\s?/,'')); i++; } out.push(`<blockquote>${md(q.join('\n'), ids)}</blockquote>`); continue; }
+  if((m=l.match(/^(\s*)([-*]|\d+\.)\s+(.*)$/))){
+   const type = /\d/.test(m[2])?'ol':'ul';
+   if(inList && inList!==type) flushList();
+   inList = type;
+   let text = m[3]; let sub=[];
+   while(i+1<lines.length && /^\s{2,}([-*]|\d+\.)\s+/.test(lines[i+1])){ i++; sub.push(lines[i].replace(/^\s{2,}([-*]|\d+\.)\s+/,'')); }
+   while(i+1<lines.length && /^\s{2,}\S/.test(lines[i+1]) && !/^\s{2,}([-*]|\d+\.)\s+/.test(lines[i+1])){ i++; text += ' ' + lines[i].trim(); }
+   listBuf.push(`<li>${il(text)}${sub.length?`<ul>${sub.map(s=>`<li>${il(s)}</li>`).join('')}</ul>`:''}</li>`); i++; continue; }
+  flushList(); const p=[]; while(i<lines.length && !/^\s*$/.test(lines[i]) && !/^(#{1,6}\s|\||>|---|\s*([-*]|\d+\.)\s)/.test(lines[i])){ p.push(lines[i]); i++; }
+  out.push(`<p>${il(p.join(' '))}</p>`);
+ }
+ flushList();
+ if(top && toc.length){ const k = out.indexOf('<hr>'); const t = `<div class="toc"><b>Contents</b>${toc.join('')}</div>`; if(k>=0) out.splice(k,0,t); else out.unshift(t); }
+ return out.join('\n');
+}
+
+
+
+let zoom = 1; try{ zoom = parseFloat(localStorage.getItem('wfg-zoom')||'1')||1; }catch(e){}
+function fixHeaderHeight(){ document.documentElement.style.setProperty('--hh', (document.querySelector('header').offsetHeight+2)+'px'); }
+function setZoom(z){ zoom = Math.min(1.8, Math.max(0.7, Math.round(z*20)/20)); document.documentElement.style.setProperty('--zoom', zoom); try{ localStorage.setItem('wfg-zoom', String(zoom)); }catch(e){} fixHeaderHeight(); }
+document.getElementById('zm').onclick = () => setZoom(zoom-0.1);
+document.getElementById('zp').onclick = () => setZoom(zoom+0.1);
+document.getElementById('zr').onclick = () => setZoom(1);
+window.addEventListener('resize', fixHeaderHeight);
+setZoom(zoom);
+document.getElementById('plan-out').innerHTML = md(document.getElementById('PLAN_MD').textContent);
+fixHeaderHeight();
+if(location.hash){ const el = document.getElementById(decodeURIComponent(location.hash.slice(1))); if(el) el.scrollIntoView(); }
+})();
+</script>
+</body>
+</html>
